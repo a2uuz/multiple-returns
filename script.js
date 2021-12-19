@@ -1,14 +1,16 @@
 function isFieldEmpty() {
-   let field = document.querySelector('#info');
-    if (field.value === '') {
-    return true;
-    } else {
-      return false;
-    }
+  const field = document.querySelector('#info');
+  if(field.value === ''){
+  return true;
+  }else{
+    return false;
+  }
 }
 
-let fieldTest = isFieldEmpty();
+const fieldTest = isFieldEmpty();
 
-if (fieldTest === true) {
-    alert('Please provide your information.');
+if(fieldTest === true){
+ alert(`Please provide your information.`); 
+}else{
+ alert(`You're all set broski`); 
 }
